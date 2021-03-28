@@ -1,0 +1,113 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    justify-content: center;
+}
+
+.container-default {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;  
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/** NAV **/
+.navbar-toggler {
+    text-align: left;
+    padding: 0;
+    margin: auto 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 30px;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.precio-texto {
+    margin: auto;
+}
+
+.back {
+    background-image: url(../images/Boko_blank.png);
+    background-size: cover;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 400px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    padding: 20px;
+}
+
+
+footer {
+    color: #989898;
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 2rem;
+    font-size: 80%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.descripcion{
+    font-size: 20px;;
+}
